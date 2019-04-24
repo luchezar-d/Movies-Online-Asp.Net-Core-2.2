@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesOnline", "MoviesOnlin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesOnline.Data", "MoviesOnline.Data\MoviesOnline.Data.csproj", "{ACDFBD28-C47E-4D62-8B69-DBEE76C0DBDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesOnline.Services", "MoviesOnline.Services\MoviesOnline.Services.csproj", "{BFD69CD5-1AFA-41CA-9DDF-EE9E17310557}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesOnline.Services", "MoviesOnline.Services\MoviesOnline.Services.csproj", "{BFD69CD5-1AFA-41CA-9DDF-EE9E17310557}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesOnline.ViewModels", "MoviesOnline.ViewModels\MoviesOnline.ViewModels.csproj", "{9E9C5FBA-7DA1-430F-B00C-87B7655DAA07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesOnline.ViewModels", "MoviesOnline.ViewModels\MoviesOnline.ViewModels.csproj", "{9E9C5FBA-7DA1-430F-B00C-87B7655DAA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

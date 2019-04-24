@@ -176,7 +176,7 @@ body {
 
 .imageCell {
     width: 128px;
-    padding: 10px;
+    height: 200px;
 }
 
 #assetsTable td {

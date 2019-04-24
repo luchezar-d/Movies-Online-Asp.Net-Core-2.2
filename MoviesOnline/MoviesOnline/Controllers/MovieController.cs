@@ -37,5 +37,20 @@ namespace MoviesOnline.Controllers
 
             return View(model);
         }
+        public IActionResult Detail(int id)
+        {
+            var movie = _services.GetById(id);
+
+            var model = new MoviesDetailViewModel
+            {
+                MovieId = id,
+                Title = movie.Title,
+                ImageUrl = movie.ImageUrl,
+                Genre = movie.Genre,
+                Rating = movie.Rating
+            };
+
+            return View(model);
+        }
     }
 }

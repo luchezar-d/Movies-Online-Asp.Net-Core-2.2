@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MoviesOnline.Data\MoviesOnline.Data.csproj" />
+    <ProjectReference Include="..\MoviesOnline.ViewModels\MoviesOnline.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

@@ -41,6 +41,8 @@ namespace MoviesOnline
 
             services.AddSingleton(Configuration);
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IRatingService, RatingService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -69,7 +71,7 @@ namespace MoviesOnline
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Movie}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

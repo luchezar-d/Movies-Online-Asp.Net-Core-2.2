@@ -92,22 +92,6 @@ body {
     min-height: 200px;
 }
 
-.card-icon {
-    color: #777;
-    font-size: 40px;
-    padding: 24px;
-    -webkit-border-radius: 1100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    vertical-align: middle;
-    width: 60px;
-    height: 60px;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-}
 
 .icon-wrapper {
     display: table-cell;
@@ -175,8 +159,8 @@ body {
 }
 
 .imageCell {
-    width: 128px;
-    height: 200px;
+    width: 180px;
+    height: 230px;
 }
 
 #assetsTable td {
@@ -250,14 +234,4 @@ body {
 .branchContact {
     padding: 12px 0 16px 0;
     font-size: 1.2em;
-}
-
-#patronHasFees {
-    color: #c62222;
-    font-weight: bold;
-}
-
-#patronNoFees {
-    color: #2f6fc7;
-    font-weight: bold;
 }

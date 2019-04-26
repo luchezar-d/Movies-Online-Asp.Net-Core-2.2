@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="page-heading clearfix detailHeading">
-        <h2 class="text-muted">View Library Item</h2>
+        <h2 class="text-muted">@Model.Title Details</h2>
     </div>
 </div>
 
@@ -13,12 +13,16 @@
                 <div class="detailImage" src="@Model.ImageUrl"></div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div style="text-align:center" class="col-md-4">
             <div>
-                <p id="itemTitle">@Model.Title</p>
-                <p id="itemAuthor">@Model.Rating.RatingValue</p>
-                <p id="itemStatus">@Model.Genre.Name</p>
+                <p id="itemTitle">Title : @Model.Title</p>
+                <p id="itemAuthor">Rating : @Model.Rating.RatingValue</p>
+                <p id="itemStatus">Genre : @Model.Genre.Name</p>
             </div>
+        </div>
+        <div class="col-md-4">
+            <a style="margin-left:100px;margin-top:70px;" class="btn btn-info" asp-controller="Movie" asp-action="Index">Back To List</a>
+            
         </div>
         
     </div>

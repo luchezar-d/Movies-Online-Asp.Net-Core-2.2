@@ -20,15 +20,16 @@
             <tbody>
                 @foreach (var movie in @Model.movies)
                 {
-                    <tr class="assetRow">
-                        <td class="">
-                            <a asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.Id">
+                    <tr class="assetRow jumbotron" style="width:100%">
+                        <td style="padding:30px;">
+                            <a style="padding:50px;padding-left:5px;" asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.Id">
                                 <img src="@movie.ImageUrl" class="imageCell" />
                             </a>
                         </td>
-                        <td style="margin-left:70px;">@movie.Title</td>
-                        <td>@movie.Genre.Name</td>
-                        <td>@movie.Rating.RatingValue</td>
+                        <td style="padding:35px;" style="margin-left:70px;">@movie.Title</td>
+                        <td style="padding:35px;">@movie.Genre.Name</td>
+                        <td style="padding:50px;">@movie.Rating.RatingValue</td>
+                       
                     </tr>
                 }
             </tbody>

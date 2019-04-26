@@ -1,0 +1,19 @@
+﻿@model MoviesOnline.ViewModels.GenreViewModels.GenreIndexViewModel
+@{
+    ViewBag.Title = "Genre Catalog Index";
+}
+
+<div id="movies">
+    <div id="assetsTable" style="margin: auto;
+                                 width: 50%;
+                                 padding: 10px;">
+        <h1 style="text-align:center">Genre List</h1>
+        <hr />
+        @foreach (var genre in @Model.genres)
+        {
+            <a asp-controller="Genre" asp-action="Detail" asp-route-id="@genre.Id">
+                <h2 style="text-align:center"> @genre.Name</h2>
+            </a>
+        }
+    </div>
+</div>

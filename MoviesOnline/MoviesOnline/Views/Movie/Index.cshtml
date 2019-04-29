@@ -8,7 +8,7 @@
     <div id="assetsTable" style="margin: auto;
                                  width: 50%;
                                  padding: 10px;">
-        <table id="CatalogIndexTable" style="text-align:center">
+        <table style="margin-left:-200px" id="CatalogIndexTable" style="text-align:center">
             <thead>
                 <tr>
                     <th>Image</th>
@@ -27,9 +27,8 @@
                             </a>
                         </td>
                         <td style="padding:35px;" style="margin-left:70px;">@movie.Title</td>
-                        <td style="padding:35px;">@movie.Genre.Name</td>
-                        <td style="padding:50px;">@movie.Rating.RatingValue</td>
-                       
+                        <td style="padding:35px;">@movie.Genre</td>
+                        <td style="padding:50px;">@movie.Rating</td>
                     </tr>
                 }
             </tbody>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MoviesOnline.Data.Models;
 using MoviesOnline.Services.Interfaces;
 using MoviesOnline.ViewModels.GenreViewModels;
 using MoviesOnline.ViewModels.MovieViewModels;
@@ -50,6 +51,19 @@ namespace MoviesOnline.Controllers
             };
 
             return View(model);
+        }
+        [HttpPost]
+        public IActionResult Create(Genre genre)
+        {
+            services.Add(genre);
+            
+            var model = new GenreCreateViewModel
+            {
+                Id = genre.Id,
+                Name = genre.Name
+            };
+
+            return RedirectToAction("Index", "Genre");
         }
     }
 }

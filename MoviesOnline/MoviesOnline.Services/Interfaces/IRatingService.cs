@@ -7,6 +7,7 @@ namespace MoviesOnline.Services.Interfaces
 {
     public interface IRatingService
     {
+        void Add(Rating newRating);
         Rating GetById(int id);
         IEnumerable<Rating> GetAll();
     }

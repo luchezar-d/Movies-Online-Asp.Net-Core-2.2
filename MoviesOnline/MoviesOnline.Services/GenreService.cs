@@ -18,6 +18,12 @@ namespace MoviesOnline.Services
             this._db = _db;
         }
 
+        public void Add(Genre newGenre)
+        {
+            this._db.Add(newGenre);
+            this._db.SaveChanges();
+        }
+
         public IEnumerable<Genre> GetAll()
         {
             return this._db.Genres;

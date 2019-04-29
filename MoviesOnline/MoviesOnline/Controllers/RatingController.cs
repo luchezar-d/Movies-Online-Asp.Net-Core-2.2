@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MoviesOnline.Data.Models;
 using MoviesOnline.Services;
 using MoviesOnline.Services.Interfaces;
 using MoviesOnline.ViewModels.RatingViewModels;
@@ -50,6 +51,19 @@ namespace MoviesOnline.Controllers
             };
 
             return View(model);
+        }
+        [HttpPost]
+        public IActionResult Create(Rating rating)
+        {
+            services.Add(rating);
+
+            var model = new RatingCreateViewModel
+            {
+                Id = rating.Id,
+                RatingValue = rating.RatingValue
+            };
+
+            return RedirectToAction("Index", "Rating");
         }
     }
 }

@@ -17,6 +17,12 @@ namespace MoviesOnline.Services
             this._db = _db;
         }
 
+        public void Add(Rating newRating)
+        {
+            this._db.Add(newRating);
+            this._db.SaveChanges();
+        }
+
         public IEnumerable<Rating> GetAll()
         {
             return this._db.Ratings;

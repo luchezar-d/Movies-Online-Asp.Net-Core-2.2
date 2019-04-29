@@ -10,5 +10,6 @@ namespace MoviesOnline.Services.Interfaces
     {
         Genre GetById(int id);
         IEnumerable<Genre> GetAll();
+        void Add(Genre newGenre);
     }
 }

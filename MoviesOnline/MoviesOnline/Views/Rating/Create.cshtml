@@ -1,0 +1,13 @@
+﻿@model MoviesOnline.ViewModels.RatingViewModels.RatingCreateViewModel
+
+
+<form asp-controller="Rating" asp-action="Create" method="post">
+    <div class="form-row">
+        <div class="col-md-12">
+
+            <label asp-for="RatingValue">Rating Value</label>
+            <input asp-for="RatingValue" class="form-control" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-success d-block ml-auto">Create</button>
+</form>

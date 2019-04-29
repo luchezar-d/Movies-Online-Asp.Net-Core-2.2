@@ -1,0 +1,13 @@
+﻿@model MoviesOnline.ViewModels.GenreViewModels.GenreCreateViewModel
+
+
+<form asp-controller="Genre" asp-action="Create" method="post">
+    <div class="form-row">
+        <div class="col-md-12">
+
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-success d-block ml-auto">Create</button>
+</form>

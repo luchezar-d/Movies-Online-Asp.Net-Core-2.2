@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesOnline.Services", "Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoviesOnline.ViewModels", "MoviesOnline.ViewModels\MoviesOnline.ViewModels.csproj", "{9E9C5FBA-7DA1-430F-B00C-87B7655DAA07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesOnline.Tests", "MoviesOnline.Tests\MoviesOnline.Tests.csproj", "{7CDB3A5E-4CB6-43BC-B1D1-16112D3DAB08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9E9C5FBA-7DA1-430F-B00C-87B7655DAA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E9C5FBA-7DA1-430F-B00C-87B7655DAA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E9C5FBA-7DA1-430F-B00C-87B7655DAA07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CDB3A5E-4CB6-43BC-B1D1-16112D3DAB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDB3A5E-4CB6-43BC-B1D1-16112D3DAB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDB3A5E-4CB6-43BC-B1D1-16112D3DAB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDB3A5E-4CB6-43BC-B1D1-16112D3DAB08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

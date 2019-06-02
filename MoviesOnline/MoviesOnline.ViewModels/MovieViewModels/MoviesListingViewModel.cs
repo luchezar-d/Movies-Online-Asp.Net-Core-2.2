@@ -13,8 +13,8 @@ namespace MoviesOnline.ViewModels
 
         public string Title { get; set; }
 
-        public Genre Genre { get; set; }
+        public string Genre { get; set; }
 
-        public Rating Rating { get; set; }
+        public int Rating { get; set; }
     }
 }

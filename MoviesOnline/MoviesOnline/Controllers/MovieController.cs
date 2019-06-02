@@ -31,8 +31,8 @@ namespace MoviesOnline.Controllers
                 Id = result.Id,
                 ImageUrl = result.ImageUrl,
                 Title = result.Title,
-                Genre = result.Genre,
-                Rating = result.Rating
+                Genre = result.Genre.Name,
+                Rating = result.Rating.RatingValue
             });
 
             var model = new MoviesIndexViewModel
